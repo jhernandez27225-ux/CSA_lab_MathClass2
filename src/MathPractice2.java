@@ -3,12 +3,19 @@ public class MathPractice2 {
     public static void main(String[] args) {
         // You can test your methods here, e.g.:
         // System.out.println(q1());
+        System.out.println("Random Number: " + q1()):;
     }
 
     // 1. Generate a random integer between 100 and 200 inclusive.
     public static int q1() {
         // TODO: Implement
-        return 0;
+        int min = 100;
+        int max = 200;
+
+        int range = (max - min) + 1;
+        int ranNum= (int(Math.random() * range + Min));
+        return ranNum;
+        
     }
 
     // 2. Use Math.min() to return the smaller of two integers.
@@ -26,7 +33,16 @@ public class MathPractice2 {
     // 4. Simulate flipping a coin (randomly return "Heads" or "Tails").
     public static String q4() {
         // TODO: Implement
-        return "";
+        int numerator = (int)(Math.random() * 100); 
+        int result = numerator % 2;
+
+        if(result  == 0)(
+            return "Heads";
+        ) else(
+            return "Tails";
+        )
+        
+        
     }
 
     // 5. Return the result of rounding 3.14159 to the nearest integer using Math.round().
